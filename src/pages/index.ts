@@ -1,0 +1,12 @@
+export { default as HomePage } from './HomePage';
+export { default as AboutPage } from './AboutPage';
+export { default as OlympiadsPage } from './OlympiadsPage';
+export { default as ResourcesPage } from './ResourcesPage';
+export { default as ImportantDatesPage } from './ImportantDatesPage';
+export { default as SchoolRegistrationPage } from './SchoolRegistrationPage';
+export { default as ResultsPage } from './ResultsPage';
+export { default as CertificateVerificationPage } from './CertificateVerificationPage';
+export { default as ContactPage } from './ContactPage';
+export { default as FAQPage } from './FAQPage';
+export { default as PrivacyPolicyPage } from './PrivacyPolicyPage';
+export { default as TermsPage } from './TermsPage';

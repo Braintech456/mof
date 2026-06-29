@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-ink bg-white antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold text-navy;
+  }
+
+  /* Focus states for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold;
+  }
+
+  /* Selection colors */
+  ::selection {
+    @apply bg-navy/10;
+  }
+
+  /* Dark mode base styles */
+  .dark body {
+    @apply bg-navy-900 text-ink-100;
+  }
+
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    @apply text-white;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-navy text-white font-sans font-medium rounded transition-all duration-200 hover:bg-navy-600 focus:ring-2 focus:ring-navy focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-gold text-gold font-sans font-medium rounded transition-all duration-200 hover:bg-gold hover:text-navy focus:ring-2 focus:ring-gold focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-transparent border border-navy text-navy font-sans font-medium rounded transition-all duration-200 hover:bg-navy hover:text-white;
+  }
+
+  .card {
+    @apply bg-white rounded shadow-card transition-shadow duration-200 hover:shadow-card-hover;
+  }
+
+  .dark .card {
+    @apply bg-navy-800 shadow-none border border-navy-700;
+  }
+
+  .section-heading {
+    @apply font-serif text-3xl md:text-4xl font-bold text-navy mb-4;
+  }
+
+  .dark .section-heading {
+    @apply text-white;
+  }
+
+  .section-subheading {
+    @apply font-serif text-xl md:text-2xl font-bold text-navy mb-3;
+  }
+
+  .dark .section-subheading {
+    @apply text-white;
+  }
+
+  .gold-divider {
+    @apply w-16 h-0.5 bg-gold mx-auto;
+  }
+
+  .nav-link {
+    @apply font-sans text-sm font-medium text-ink transition-colors duration-200 hover:text-navy relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-200;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .dark .nav-link {
+    @apply text-ink-200 hover:text-white;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-white border border-ink-200 rounded font-sans text-ink placeholder:text-ink-300 focus:border-navy focus:ring-1 focus:ring-navy transition-colors duration-200;
+  }
+
+  .dark .input-field {
+    @apply bg-navy-800 border-navy-600 text-white placeholder:text-ink-400 focus:border-gold focus:ring-gold;
+  }
+
+  .label {
+    @apply block font-sans text-sm font-medium text-ink mb-1.5;
+  }
+
+  .dark .label {
+    @apply text-ink-200;
+  }
+
+  /* Stat number styling */
+  .stat-number {
+    @apply font-sans text-4xl md:text-5xl font-bold text-gold tabular-nums;
+  }
+
+  .stat-label {
+    @apply font-sans text-sm text-white/80 uppercase tracking-wide mt-2;
+  }
+
+  /* Timeline styling */
+  .timeline-step {
+    @apply flex items-start gap-4;
+  }
+
+  .timeline-number {
+    @apply flex-shrink-0 w-8 h-8 bg-gold text-navy font-sans font-bold text-sm rounded-full flex items-center justify-center;
+  }
+
+  /* Watermark */
+  .maharashtra-watermark {
+    position: absolute;
+    inset: 0;
+    opacity: 0.08;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='50' text-anchor='middle' font-size='40' fill='%230B2E6D'%3EMH%3C/text%3E%3C/svg%3E");
+    background-size: 200px;
+    background-repeat: repeat;
+    background-position: center;
+  }
+}
+
+/* Animations */
+@layer utilities {
+  .fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
