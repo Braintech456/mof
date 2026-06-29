@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Search, FileText, AlertCircle, Award } from 'lucide-react';
 import { Container, Section, Button, Input, Card, Spinner, Select } from '../components/ui';
-import { supabase } from '../lib/supabase';
 import { olympiads } from '../data/siteData';
 
 interface ResultData {
