@@ -536,5 +536,5 @@ export default function TalentContestsPage() {
 
     </div>
   );
-};
+}
 
