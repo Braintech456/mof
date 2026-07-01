@@ -5,6 +5,7 @@ import {
   HomePage,
   AboutPage,
   OlympiadsPage,
+  TalentContestsPage,
   ResourcesPage,
   ImportantDatesPage,
   SchoolRegistrationPage,
