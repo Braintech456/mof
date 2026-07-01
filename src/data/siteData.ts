@@ -26,6 +26,7 @@ export const navigation = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Olympiads', path: '/olympiads' },
+  { name: 'Talent Contests', path: '/talent-contests' },
   { name: 'Resources', path: '/resources' },
   { name: 'Important Dates', path: '/dates' },
   { name: 'School Registration', path: '/register' },
@@ -115,11 +116,7 @@ export const features = [
     description: 'Standardized assessment process with clear marking schemes.',
     icon: 'clipboard-check',
   },
-  {
-    title: 'State Rankings',
-    description: 'Comprehensive state-level rankings across all districts.',
-    icon: 'trophy',
-  },
+  
   {
     title: 'Digital Certificates',
     description: 'Secure, QR-verified digital certificates for all participants.',
@@ -130,11 +127,7 @@ export const features = [
     description: 'Instant online verification system for authenticity.',
     icon: 'qr-code',
   },
-  {
-    title: 'School Performance Reports',
-    description: 'Detailed analysis reports for schools to track improvement.',
-    icon: 'bar-chart-2',
-  },
+  
   {
     title: 'Merit Awards',
     description: 'Recognition and awards for top performers at state level.',
@@ -145,6 +138,21 @@ export const features = [
     description: 'Results declared within 4 weeks of examination.',
     icon: 'zap',
   },
+  {
+  title: 'Offline Examination',
+  description: 'Pen & Paper examinations conducted in participating schools.',
+  icon: 'school',
+},
+{
+  title: 'Creative Talent Contests',
+  description: 'Platform for students to showcase artistic and creative skills.',
+  icon: 'palette',
+},
+{
+  title: 'Certificate Verification',
+  description: 'Verify certificates instantly using a unique Certificate ID.',
+  icon: 'qr-code',
+},
 ];
 
 export const examProcess = [
@@ -215,6 +223,7 @@ export const importantDates = [
 
 export const stats = [
   { value: 2, label: 'Olympiads', icon: 'book-open' },
+  { value: 1, label: 'Talent Contests', icon: 'palette' },
   { value: 5, label: 'Eligible Classes', icon: 'school' },
   { value: 50, label: 'Questions', icon: 'help-circle' },
   { value: 100, label: 'Total Marks', icon: 'award' },
@@ -228,10 +237,19 @@ export const announcements = [
     title: 'Registrations Open for Maharashtra Science & Mathematics Olympiad 2026',
     date: '01 July 2026',
   },
+ 
   {
     title: 'Last Date for Registration: 31 August 2026',
     date: '31 August 2026',
   },
+   {
+  title: 'Kalavishkar – Maharashtra Art Talent Contest registrations are now open.',
+  date: '01 July 2026',
+},
+{
+  title: 'Entries for Talent Contests must be submitted through participating schools.',
+  date: '31 August 2026',
+},
   {
     title: 'Maharashtra Science Olympiad scheduled on 13 December 2026 at 10:00 AM',
     date: '13 December 2026',
