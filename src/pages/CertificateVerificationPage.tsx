@@ -114,7 +114,7 @@ export default function CertificateVerificationPage() {
 
   return (
 
-      return (
+      
     <Section className="pt-12">
       <Container size="md">
 
