@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { School, CheckCircle, ArrowRight } from 'lucide-react';
 import { Container, Section, Button, Input, Select, Textarea, Card, Spinner } from '../components/ui';
+import { supabase } from '../lib/supabase';
 
 interface FormData {
   schoolName: string;

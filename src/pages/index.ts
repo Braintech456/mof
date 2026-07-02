@@ -1,7 +1,6 @@
 export { default as HomePage } from './HomePage';
 export { default as AboutPage } from './AboutPage';
 export { default as OlympiadsPage } from './OlympiadsPage';
-export { default as TalentContestsPage } from './TalentContestsPage';
 export { default as ResourcesPage } from './ResourcesPage';
 export { default as ImportantDatesPage } from './ImportantDatesPage';
 export { default as SchoolRegistrationPage } from './SchoolRegistrationPage';

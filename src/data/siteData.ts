@@ -1,29 +1,24 @@
 export const siteConfig = {
   name: 'Maharashtra Olympiad Foundation',
   shortName: 'MOF',
-  tagline: 'Promoting Academic Excellence & Creative Talent',
+  tagline: 'Empowering Young Minds • Celebrating Excellence',
   marathiName: 'महाराष्ट्र ऑलिम्पियाड फाउंडेशन',
-
-  email: 'mofindia.info@gmail.com',
-  phone: '+91 93243 52753',
-  whatsapp: '+91 93243 52753',
-
-  website: 'https://mofindia.online',
-
+  email: 'info@maharashtraolympiad.org',
+  phone: '+91 22 1234 5678',
+  whatsapp: '+91 98765 43210',
   address: {
-    line1: '13, Alok, Opp. Murkute Hall',
-    line2: 'New Pandit Colony, Gangapur Road',
-    city: 'Nashik',
+    line1: 'Olympiad Bhavan, 4th Floor',
+    line2: 'Dr. Ambedkar Road, Dadar',
+    city: 'Mumbai',
     state: 'Maharashtra',
-    pincode: '422 002',
+    pincode: '400014',
   },
-
   social: {
-    facebook: '',
-    twitter: '',
-    instagram: '',
-    linkedin: '',
-    youtube: '',
+    facebook: 'https://facebook.com/maharashtraolympiad',
+    twitter: 'https://twitter.com/maharashtraolympiad',
+    instagram: 'https://instagram.com/maharashtraolympiad',
+    linkedin: 'https://linkedin.com/company/maharashtraolympiad',
+    youtube: 'https://youtube.com/@maharashtraolympiad',
   },
 };
 
@@ -31,7 +26,6 @@ export const navigation = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Olympiads', path: '/olympiads' },
-  { name: 'Talent Contests', path: '/talent-contests' },
   { name: 'Resources', path: '/resources' },
   { name: 'Important Dates', path: '/dates' },
   { name: 'School Registration', path: '/register' },
@@ -41,336 +35,232 @@ export const navigation = [
 ];
 
 export const utilityLinks = [
-  { name: 'Announcements', path: '/news' },
+  { name: 'News & Announcements', path: '/news' },
   { name: 'Gallery', path: '/gallery' },
   { name: 'FAQs', path: '/faq' },
 ];
 
 export const olympiads = [
   {
-    id: 'science',
-    name: 'Maharashtra Science Olympiad',
-    shortName: 'MSO',
-    description:
-      'Enhance scientific thinking, analytical ability and problem-solving skills through a state-level Science Olympiad.',
-
-    subjects: [
-      'Physics',
-      'Chemistry',
-      'Biology',
-      'Environmental Science',
-      'Logical Reasoning',
-    ],
-
-    eligibility: 'Classes V - IX',
-
-    duration: '60 Minutes',
-
-    mode: 'Offline (Pen & Paper)',
-
-    medium: ['English', 'Marathi'],
-
-    location: 'Student\'s Own School',
-
-    registrationFee: '₹125',
-
-    examDate: '13 December 2026',
-
-    examTime: '10:00 AM',
-
-    status: 'active',
-
-    pattern: {
-      questions: 50,
-      type: 'Multiple Choice Questions (MCQs)',
-      marking: '2 Marks per Question • No Negative Marking',
-      totalMarks: 100,
-    },
-
-    color: 'bg-green-500',
-
-    icon: 'flask',
-  },
-
-  {
     id: 'math',
-    name: 'Maharashtra Mathematics Olympiad',
-    shortName: 'MMO',
-
-    description:
-      'Develop mathematical reasoning, logical thinking and analytical skills through a competitive examination.',
-
-    subjects: [
-      'Arithmetic',
-      'Algebra',
-      'Geometry',
-      'Logical Reasoning',
-    ],
-
-    eligibility: 'Classes V - IX',
-
-    duration: '60 Minutes',
-
-    mode: 'Offline (Pen & Paper)',
-
-    medium: ['English', 'Marathi'],
-
-    location: 'Student\'s Own School',
-
-    registrationFee: '₹125',
-
-    examDate: '20 December 2026',
-
-    examTime: '10:00 AM',
-
-    status: 'active',
-
+    name: 'Mathematics Olympiad',
+    shortName: 'MO',
+    description: 'Test your mathematical reasoning and problem-solving abilities.',
+    subjects: ['Arithmetic', 'Algebra', 'Geometry', 'Number Theory'],
+    eligibility: 'Classes 1-12',
+    duration: '60 minutes',
     pattern: {
       questions: 50,
-      type: 'Multiple Choice Questions (MCQs)',
-      marking: '2 Marks per Question • No Negative Marking',
-      totalMarks: 100,
+      type: 'Multiple Choice Questions',
+      marking: '1 mark per question, no negative marking',
     },
-
     color: 'bg-blue-500',
-
     icon: 'calculator',
   },
-
+  {
+    id: 'science',
+    name: 'Science Olympiad',
+    shortName: 'SO',
+    description: 'Explore the wonders of physics, chemistry, and biology.',
+    subjects: ['Physics', 'Chemistry', 'Biology', 'Environmental Science'],
+    eligibility: 'Classes 1-12',
+    duration: '60 minutes',
+    pattern: {
+      questions: 50,
+      type: 'Multiple Choice Questions',
+      marking: '1 mark per question, no negative marking',
+    },
+    color: 'bg-green-500',
+    icon: 'flask',
+  },
   {
     id: 'english',
     name: 'English Olympiad',
-
     shortName: 'EO',
-
-    description:
-      'English Olympiad will be launched soon. Stay tuned for official announcements.',
-
-    status: 'coming-soon',
-
+    description: 'Demonstrate your command of language and literature.',
+    subjects: ['Grammar', 'Vocabulary', 'Comprehension', 'Literature'],
+    eligibility: 'Classes 1-12',
+    duration: '60 minutes',
+    pattern: {
+      questions: 50,
+      type: 'Multiple Choice Questions',
+      marking: '1 mark per question, no negative marking',
+    },
     color: 'bg-purple-500',
-
     icon: 'book-open',
   },
-
-  {
-    id: 'computer',
-    name: 'Computer Olympiad',
-
-    shortName: 'CO',
-
-    description:
-      'Computer Olympiad will be launched soon. Registrations will open shortly.',
-
-    status: 'coming-soon',
-
-    color: 'bg-cyan-500',
-
-    icon: 'monitor',
-  },
-
   {
     id: 'gk',
     name: 'General Knowledge Olympiad',
-
     shortName: 'GKO',
-
-    description:
-      'General Knowledge Olympiad will be introduced in the upcoming academic session.',
-
-    status: 'coming-soon',
-
+    description: 'Test your awareness of the world around you.',
+    subjects: ['Current Affairs', 'History', 'Geography', 'General Science'],
+    eligibility: 'Classes 1-12',
+    duration: '60 minutes',
+    pattern: {
+      questions: 50,
+      type: 'Multiple Choice Questions',
+      marking: '1 mark per question, no negative marking',
+    },
     color: 'bg-orange-500',
-
     icon: 'globe',
+  },
+  {
+    id: 'computer',
+    name: 'Computer Olympiad',
+    shortName: 'CO',
+    description: 'Showcase your digital literacy and computing skills.',
+    subjects: ['Computer Fundamentals', 'Internet', 'Programming Basics', 'Digital Literacy'],
+    eligibility: 'Classes 3-12',
+    duration: '60 minutes',
+    pattern: {
+      questions: 50,
+      type: 'Multiple Choice Questions',
+      marking: '1 mark per question, no negative marking',
+    },
+    color: 'bg-cyan-500',
+    icon: 'monitor',
+  },
+  {
+    id: 'art',
+    name: 'Art Olympiad',
+    shortName: 'AO',
+    description: 'Express creativity through visual and performing arts.',
+    subjects: ['Drawing', 'Painting', 'Art History', 'Creative Expression'],
+    eligibility: 'Classes 1-12',
+    duration: '90 minutes',
+    pattern: {
+      questions: 'Practical + Written',
+      type: 'Mixed Format',
+      marking: 'Based on creativity and technique',
+    },
+    color: 'bg-pink-500',
+    icon: 'palette',
   },
 ];
 
 export const features = [
   {
-    title: 'Offline Examination',
-    description:
-      'All Olympiads are conducted offline (Pen & Paper) in the student’s own participating school.',
-    icon: 'school',
-  },
-  {
     title: 'Experienced Academic Panel',
-    description:
-      'Question papers are designed and reviewed by experienced academicians and subject experts.',
+    description: 'Question papers designed by subject matter experts with decades of experience.',
     icon: 'users',
   },
   {
     title: 'Transparent Evaluation',
-    description:
-      'Answer sheets are evaluated centrally following a standardized assessment process.',
+    description: 'Standardized assessment process with clear marking schemes.',
     icon: 'clipboard-check',
   },
   {
-    title: 'QR Verified Certificates',
-    description:
-      'Every certificate carries a unique Certificate ID and can be verified online instantly.',
-    icon: 'qr-code',
-  },
-  {
-    title: 'Awards & Recognition',
-    description:
-      'Merit Certificates, Participation Certificates, School Trophies and Champion Awards for deserving students.',
-    icon: 'award',
-  },
-  {
-    title: 'Creative Talent Contests',
-    description:
-      'Apart from Olympiads, students can also participate in various creative talent competitions conducted by MOF.',
-    icon: 'palette',
-  },
-  {
-    title: 'School Excellence',
-    description:
-      'Special recognition is given to the Best Performing Schools and School Coordinators.',
+    title: 'State Rankings',
+    description: 'Comprehensive state-level rankings across all districts.',
     icon: 'trophy',
   },
   {
-    title: 'Certificate Verification',
-    description:
-      'Employers, schools and institutions can verify certificates through the official verification portal.',
-    icon: 'shield-check',
+    title: 'Digital Certificates',
+    description: 'Secure, QR-verified digital certificates for all participants.',
+    icon: 'award',
+  },
+  {
+    title: 'QR-Verified Certificates',
+    description: 'Instant online verification system for authenticity.',
+    icon: 'qr-code',
+  },
+  {
+    title: 'School Performance Reports',
+    description: 'Detailed analysis reports for schools to track improvement.',
+    icon: 'bar-chart-2',
+  },
+  {
+    title: 'Merit Awards',
+    description: 'Recognition and awards for top performers at state level.',
+    icon: 'medal',
+  },
+  {
+    title: 'Fast Result Processing',
+    description: 'Results declared within 4 weeks of examination.',
+    icon: 'zap',
   },
 ];
 
 export const examProcess = [
-  {
-    step: 1,
-    title: 'School Registration',
-    description:
-      'Schools register as participating institutions through the official portal.',
-  },
-  {
-    step: 2,
-    title: 'Student Registration',
-    description:
-      'Student details are submitted by the School Olympiad Coordinator.',
-  },
-  {
-    step: 3,
-    title: 'Olympiad Examination',
-    description:
-      'Offline examination is conducted in the student’s own school.',
-  },
-  {
-    step: 4,
-    title: 'Central Evaluation',
-    description:
-      'Answer sheets are evaluated centrally by the Olympiad Evaluation Team.',
-  },
-  {
-    step: 5,
-    title: 'Result Declaration',
-    description:
-      'Results are published on the official MOF website.',
-  },
-  {
-    step: 6,
-    title: 'Certificates & Awards',
-    description:
-      'Certificates, trophies and awards are distributed to deserving students and schools.',
-  },
-  {
-    step: 7,
-    title: 'Certificate Verification',
-    description:
-      'Certificates can be verified online using the Certificate ID.',
-  },
+  { step: 1, title: 'School Registration', description: 'Schools register online and receive login credentials.' },
+  { step: 2, title: 'Student Data Submission', description: 'Schools submit student details through the portal.' },
+  { step: 3, title: 'Hall Ticket Generation', description: 'Hall tickets generated and distributed to students.' },
+  { step: 4, title: 'Olympiad Examination', description: 'Examinations conducted at respective schools.' },
+  { step: 5, title: 'Evaluation', description: 'Answer sheets evaluated centrally by expert panel.' },
+  { step: 6, title: 'Results', description: 'Results declared online, accessible via roll number.' },
+  { step: 7, title: 'Certificate Distribution', description: 'Digital certificates issued to all participants.' },
+  { step: 8, title: 'Online Verification', description: 'Certificates verified online using unique ID.' },
 ];
-
 
 export const importantDates = [
   {
     event: 'Registration Opens',
-    date: 'Open Now',
-    description:
-      'School registrations are currently open for Maharashtra Science & Mathematics Olympiad 2026.',
+    date: 'July 1, 2026',
+    description: 'Schools can begin online registration for all Olympiads.',
   },
   {
     event: 'Registration Closes',
-    date: '31 August 2026',
-    description:
-      'Last date for submission of registration forms and fees.',
+    date: 'September 30, 2026',
+    description: 'Last date for school registration and student data submission.',
   },
   {
-    event: 'Maharashtra Science Olympiad',
-    date: '13 December 2026',
-    description:
-      'Sunday • 10:00 AM • Offline (Pen & Paper)',
+    event: 'Hall Ticket Release',
+    date: 'October 15, 2026',
+    description: 'Hall tickets available for download from student portal.',
   },
   {
-    event: 'Maharashtra Mathematics Olympiad',
-    date: '20 December 2026',
-    description:
-      'Sunday • 10:00 AM • Offline (Pen & Paper)',
+    event: 'Olympiad Examination',
+    date: 'November 10-30, 2026',
+    description: 'Examinations conducted across all participating schools.',
   },
   {
     event: 'Result Declaration',
-    date: 'To Be Announced',
-    description:
-      'Results will be published on the official website.',
+    date: 'December 20, 2026',
+    description: 'Results available online. Schools receive detailed reports.',
+  },
+  {
+    event: 'Certificate Distribution',
+    date: 'January 15, 2027',
+    description: 'Digital certificates issued. Physical certificates dispatched.',
   },
 ];
 
 export const stats = [
-  {
-    value: 2,
-    label: 'Olympiads',
-    icon: 'book-open',
-  },
-  {
-    value: 5,
-    label: 'Eligible Classes',
-    icon: 'school',
-  },
-  {
-    value: 50,
-    label: 'MCQs',
-    icon: 'help-circle',
-  },
-  {
-    value: 100,
-    label: 'Total Marks',
-    icon: 'award',
-  },
-  {
-    value: 60,
-    label: 'Minutes',
-    icon: 'clock',
-  },
+  { value: 1250000, label: 'Students Participated', icon: 'users' },
+  { value: 4500, label: 'Schools Registered', icon: 'school' },
+  { value: 6, label: 'Olympiads Conducted', icon: 'book-open' },
+  { value: 36, label: 'Districts Covered', icon: 'map-pin' },
+  { value: 890000, label: 'Certificates Issued', icon: 'award' },
 ];
 
-
-export const testimonials = [];
-
-export const announcements = [
+export const testimonials = [
   {
-    title:
-      'Registrations Open for Maharashtra Science Olympiad & Maharashtra Mathematics Olympiad 2026',
-    date: '01 July 2026',
+    type: 'Principal',
+    name: 'Dr. Suresh Patil',
+    school: 'Shivaji Public School, Pune',
+    text: 'MOF has provided our students an excellent platform to showcase their academic abilities. The quality of questions and the conduct of examinations has been exemplary.',
+    avatar: 'SP',
   },
   {
-    title:
-      'Last Date for Registration is 31 August 2026',
-    date: '31 August 2026',
+    type: 'Teacher',
+    name: 'Mrs. Meera Joshi',
+    school: 'St. Xavier\'s High School, Mumbai',
+    text: 'The detailed reports help us identify areas where our students need improvement. It has become an integral part of our academic calendar.',
+    avatar: 'MJ',
   },
   {
-    title:
-      'Maharashtra Science Olympiad will be conducted on Sunday, 13 December 2026 at 10:00 AM.',
-    date: '13 December 2026',
+    type: 'Parent',
+    name: 'Mr. Rajesh Kulkarni',
+    school: 'Parent of Class 8 Student',
+    text: 'The Olympiad experience prepared my daughter well for competitive exams. The certificate verification system adds credibility.',
+    avatar: 'RK',
   },
   {
-    title:
-      'Maharashtra Mathematics Olympiad will be conducted on Sunday, 20 December 2026 at 10:00 AM.',
-    date: '20 December 2026',
-  },
-  {
-    title:
-      'English, Computer & General Knowledge Olympiads will be introduced soon.',
-    date: 'Coming Soon',
+    type: 'Student',
+    name: 'Ananya Deshmukh',
+    school: 'Class 10, Nagpur',
+    text: 'Participating in MOF Olympiads boosted my confidence. I improved my ranking from state rank 45 to rank 12 over two years.',
+    avatar: 'AD',
   },
 ];
