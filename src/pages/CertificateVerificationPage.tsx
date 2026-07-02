@@ -185,9 +185,7 @@ export default function CertificateVerificationPage() {
           </div>
         )}
 
-        {loading && (
-   ...
-)}
+        
 
                 {/* Valid Certificate */}
 
