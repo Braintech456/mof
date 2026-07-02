@@ -5,6 +5,7 @@ import {
   HomePage,
   AboutPage,
   OlympiadsPage,
+  TalentContestsPage,
   ResourcesPage,
   ImportantDatesPage,
   SchoolRegistrationPage,
@@ -26,6 +27,7 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/olympiads" element={<OlympiadsPage />} />
             <Route path="/olympiads/:olympiadId" element={<OlympiadsPage />} />
+            <Route path="/talent-contests" element={<TalentContestsPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
             <Route path="/dates" element={<ImportantDatesPage />} />
             <Route path="/register" element={<SchoolRegistrationPage />} />
