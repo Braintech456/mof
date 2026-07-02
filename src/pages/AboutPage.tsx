@@ -58,43 +58,7 @@ export default function AboutPage() {
   </Container>
 </Section>
 
-      {/* Statistics */}
-<Section background="gray">
-  <Container>
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <Card className="text-center">
-        <h3 className="text-4xl font-bold text-gold mb-2">4500+</h3>
-        <p className="text-ink dark:text-ink-200 font-medium">
-          Schools Participating
-        </p>
-      </Card>
-
-      <Card className="text-center">
-        <h3 className="text-4xl font-bold text-gold mb-2">12 Lakh+</h3>
-        <p className="text-ink dark:text-ink-200 font-medium">
-          Students Assessed
-        </p>
-      </Card>
-
-      <Card className="text-center">
-        <h3 className="text-4xl font-bold text-gold mb-2">15+</h3>
-        <p className="text-ink dark:text-ink-200 font-medium">
-          Olympiad Subjects
-        </p>
-      </Card>
-
-      <Card className="text-center">
-        <h3 className="text-4xl font-bold text-gold mb-2">100%</h3>
-        <p className="text-ink dark:text-ink-200 font-medium">
-          Verified Certificates
-        </p>
-      </Card>
-
-    </div>
-  </Container>
-</Section>
-
+    
       {/* Our Story */}
 <Section>
   <Container size="lg">
