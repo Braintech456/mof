@@ -100,8 +100,119 @@ export default function TalentContestsPage() {
 
       </section>
 
+      {/* Intro */}
 
-      
+      <section className="container mx-auto px-6">
+
+        <div className="mx-auto max-w-4xl text-center">
+
+          <h2 className="text-4xl font-bold text-gray-900">
+            Talent Contests
+          </h2>
+
+          <p className="mt-5 text-lg leading-8 text-gray-600">
+            Maharashtra Olympiad Foundation conducts Creative Talent Contests
+            to encourage imagination, creativity and artistic excellence among
+            school students. These contests provide a platform for young minds
+            to express themselves beyond academics.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* Contest Cards */}
+
+      <section
+        id="contests"
+        className="container mx-auto px-6 py-16"
+      >
+
+        <div className="grid gap-8 lg:grid-cols-2">
+
+          {/* Kalavishkar */}
+
+          <div className="overflow-hidden rounded-3xl bg-white shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+
+            <div className="bg-gradient-to-r from-pink-500 to-rose-500 p-8 text-white">
+
+              <Palette className="mb-4 h-12 w-12" />
+
+              <h3 className="text-3xl font-bold">
+                Kalavishkar
+              </h3>
+
+              <p className="mt-2 text-pink-100">
+                Maharashtra Art Talent Contest
+              </p>
+
+            </div>
+
+            <div className="space-y-4 p-8">
+
+              <p className="text-gray-600">
+                Promote artistic creativity through Drawing and Painting.
+                Students prepare their artwork based on the prescribed theme
+                and submit it through their school.
+              </p>
+
+              <div className="grid grid-cols-2 gap-4">
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Eligibility
+                  </p>
+
+                  <p className="font-semibold">
+                    Classes III–X
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Registration Fee
+                  </p>
+
+                  <p className="font-semibold">
+                    ₹125
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Submission
+                  </p>
+
+                  <p className="font-semibold">
+                    Through School
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-sm text-gray-500">
+                    Last Date
+                  </p>
+
+                  <p className="font-semibold">
+                    31 August 2026
+                  </p>
+                </div>
+
+              </div>
+
+              <button className="mt-6 flex w-full items-center justify-center rounded-xl bg-pink-600 py-3 font-semibold text-white transition hover:bg-pink-700">
+                View Details
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
       {/* Kalavishkar Details */}
 
 <section className="bg-white py-20">
