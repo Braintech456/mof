@@ -134,7 +134,7 @@ export default function AboutPage() {
       {/* Right */}
       <Card className="p-8 bg-gradient-to-br from-navy to-navy-800 text-white">
 
-        <h3 className="font-serif text-2xl font-bold mb-6">
+        <h3 className="font-serif text-2xl font-bold text-white mb-6">
           What We Stand For
         </h3>
 
@@ -145,7 +145,7 @@ export default function AboutPage() {
               ✓
             </div>
             <div>
-              <h4 className="font-semibold mb-1">Concept-Based Learning</h4>
+              <h4 className="font-semibold text-white mb-1">Concept-Based Learning</h4>
               <p className="text-gray-300 text-sm">
                 Assessing understanding rather than memorization.
               </p>
@@ -157,7 +157,7 @@ export default function AboutPage() {
               ✓
             </div>
             <div>
-              <h4 className="font-semibold mb-1">Fair & Transparent Evaluation</h4>
+              <h4 className="font-semibold text-white mb-1">Fair & Transparent Evaluation</h4>
               <p className="text-gray-300 text-sm">
                 Standardized assessment with reliable evaluation practices.
               </p>
@@ -169,7 +169,7 @@ export default function AboutPage() {
               ✓
             </div>
             <div>
-              <h4 className="font-semibold mb-1">Recognition of Excellence</h4>
+              <h4 className="font-semibold text-white mb-1">Recognition of Excellence</h4>
               <p className="text-gray-300 text-sm">
                 Celebrating student achievement through verified certificates,
                 awards, and recognition.
@@ -196,7 +196,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 bg-navy dark:bg-gold rounded-lg flex items-center justify-center">
                   <Eye className="w-6 h-6 text-gold dark:text-navy" />
                 </div>
-                <h2 className="font-serif text-2xl font-bold text-navy dark:text-white">
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-5">
                   Our Vision
                 </h2>
               </div>
