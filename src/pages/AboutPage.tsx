@@ -396,3 +396,6 @@ export default function AboutPage() {
 
   </Container>
 </Section>
+          </>
+  );
+}
