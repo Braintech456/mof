@@ -10,7 +10,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 
-export const TalentContestsPage = () => {
+export default function TalentContestsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
 
