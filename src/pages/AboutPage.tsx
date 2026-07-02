@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Target, Eye, CheckCircle, ArrowRight } from 'lucide-react';
 import { Container, Section, Button, Card } from '../components/ui';
 import {
-  ...
+
   Medal,
   ClipboardCheck,
   BarChart3,
