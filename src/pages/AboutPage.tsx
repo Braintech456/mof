@@ -1,6 +1,15 @@
 import { Link } from 'react-router-dom';
 import { Target, Eye, CheckCircle, ArrowRight } from 'lucide-react';
 import { Container, Section, Button, Card } from '../components/ui';
+import {
+  ...
+  Medal,
+  ClipboardCheck,
+  BarChart3,
+  ShieldCheck,
+  Award,
+  Users
+} from 'lucide-react';
 
 const objectives = [
   'To identify and nurture academic talent across Maharashtra',
@@ -25,33 +34,158 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <Section className="pt-12">
-        <Container size="md">
-          <div className="text-center mb-12">
-            <h1 className="font-serif text-3xl md:text-4xl font-bold text-navy dark:text-white mb-3">
-              About Maharashtra Olympiad Foundation
-            </h1>
-            <div className="gold-divider mb-4" />
+      {/* Hero */}
+<Section className="pt-12 pb-8">
+  <Container size="lg">
+    <div className="text-center max-w-4xl mx-auto">
+      <span className="inline-block px-4 py-1 rounded-full bg-gold/10 text-gold font-semibold text-sm mb-5">
+        Empowering Academic Excellence
+      </span>
+
+      <h1 className="font-serif text-4xl md:text-5xl font-bold text-navy dark:text-white mb-6">
+        About Maharashtra Olympiad Foundation
+      </h1>
+
+      <div className="gold-divider mb-6" />
+
+      <p className="text-lg md:text-xl text-ink dark:text-ink-200 leading-relaxed">
+        Maharashtra Olympiad Foundation (MOF) is dedicated to inspiring academic
+        excellence through high-quality Olympiad examinations that encourage
+        conceptual learning, critical thinking, and healthy competition among
+        students across Maharashtra.
+      </p>
+    </div>
+  </Container>
+</Section>
+
+      {/* Statistics */}
+<Section background="gray">
+  <Container>
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <Card className="text-center">
+        <h3 className="text-4xl font-bold text-gold mb-2">4500+</h3>
+        <p className="text-ink dark:text-ink-200 font-medium">
+          Schools Participating
+        </p>
+      </Card>
+
+      <Card className="text-center">
+        <h3 className="text-4xl font-bold text-gold mb-2">12 Lakh+</h3>
+        <p className="text-ink dark:text-ink-200 font-medium">
+          Students Assessed
+        </p>
+      </Card>
+
+      <Card className="text-center">
+        <h3 className="text-4xl font-bold text-gold mb-2">15+</h3>
+        <p className="text-ink dark:text-ink-200 font-medium">
+          Olympiad Subjects
+        </p>
+      </Card>
+
+      <Card className="text-center">
+        <h3 className="text-4xl font-bold text-gold mb-2">100%</h3>
+        <p className="text-ink dark:text-ink-200 font-medium">
+          Verified Certificates
+        </p>
+      </Card>
+
+    </div>
+  </Container>
+</Section>
+
+      {/* Our Story */}
+<Section>
+  <Container size="lg">
+    <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+      {/* Left */}
+      <div>
+        <span className="text-gold font-semibold uppercase tracking-wider">
+          Our Story
+        </span>
+
+        <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy dark:text-white mt-3 mb-6">
+          Building a Culture of Academic Excellence
+        </h2>
+
+        <p className="text-lg text-ink dark:text-ink-200 leading-relaxed mb-5">
+          Maharashtra Olympiad Foundation (MOF) was established with a clear
+          vision—to provide every student with an opportunity to discover,
+          develop, and showcase their academic potential through meaningful and
+          concept-driven Olympiad examinations.
+        </p>
+
+        <p className="text-lg text-ink dark:text-ink-200 leading-relaxed mb-5">
+          We believe that true learning extends beyond classroom assessments.
+          Our Olympiads encourage students to think critically, solve problems
+          creatively, and strengthen their understanding of fundamental
+          concepts across various subjects.
+        </p>
+
+        <p className="text-lg text-ink dark:text-ink-200 leading-relaxed">
+          By partnering with schools throughout Maharashtra, we strive to create
+          an ecosystem where talent is recognized, excellence is celebrated,
+          and every learner is inspired to achieve greater heights.
+        </p>
+      </div>
+
+      {/* Right */}
+      <Card className="p-8 bg-gradient-to-br from-navy to-navy-800 text-white">
+
+        <h3 className="font-serif text-2xl font-bold mb-6">
+          What We Stand For
+        </h3>
+
+        <div className="space-y-5">
+
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-navy font-bold">
+              ✓
+            </div>
+            <div>
+              <h4 className="font-semibold mb-1">Concept-Based Learning</h4>
+              <p className="text-gray-300 text-sm">
+                Assessing understanding rather than memorization.
+              </p>
+            </div>
           </div>
 
-          <div className="prose prose-lg max-w-none">
-            <p className="text-ink dark:text-ink-200 text-lg leading-relaxed">
-              Maharashtra Olympiad Foundation (MOF) is a state-level academic body
-              dedicated to promoting excellence in education through well-designed
-              Olympiad examinations. Established in 2018, MOF has grown to become
-              the most trusted Olympiad conducting body in Maharashtra, serving
-              over 4,500 schools and 1.2 million students annually.
-            </p>
-            <p className="text-ink dark:text-ink-200 text-lg leading-relaxed">
-              Our Olympiads are designed by experienced academicians and subject
-              matter experts, ensuring that each question tests conceptual
-              understanding rather than memory. We believe in nurturing talent
-              from the grassroots level and providing every student an opportunity
-              to benchmark themselves against peers across the state.
-            </p>
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-navy font-bold">
+              ✓
+            </div>
+            <div>
+              <h4 className="font-semibold mb-1">Fair & Transparent Evaluation</h4>
+              <p className="text-gray-300 text-sm">
+                Standardized assessment with reliable evaluation practices.
+              </p>
+            </div>
           </div>
-        </Container>
-      </Section>
+
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-navy font-bold">
+              ✓
+            </div>
+            <div>
+              <h4 className="font-semibold mb-1">Recognition of Excellence</h4>
+              <p className="text-gray-300 text-sm">
+                Celebrating student achievement through verified certificates,
+                awards, and recognition.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </Card>
+
+    </div>
+  </Container>
+</Section>
+
+      
 
       {/* Vision & Mission */}
       <Section background="gray">
@@ -118,61 +252,147 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      {/* History Timeline */}
-      <Section background="gray">
-        <Container>
-          <div className="text-center mb-10">
-            <h2 className="font-serif text-3xl font-bold text-navy dark:text-white mb-3">
-              Our Journey
-            </h2>
-            <div className="gold-divider" />
-          </div>
+      {/* Why Choose MOF */}
+<Section background="gray">
+  <Container>
 
-          <div className="max-w-3xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-navy/20 dark:bg-gold/20 transform md:-translate-x-1/2" />
+    <div className="text-center mb-12">
+      <span className="text-gold font-semibold uppercase tracking-wider">
+        Why Choose MOF
+      </span>
 
-              {history.map((item, idx) => (
-                <div key={idx} className="relative flex items-center gap-4 md:gap-8 mb-6">
-                  {/* Number */}
-                  <div className="absolute left-4 md:left-1/2 w-8 h-8 bg-gold text-navy font-sans font-bold text-sm rounded-full flex items-center justify-center transform -translate-x-1/2 z-10">
-                    {idx + 1}
-                  </div>
+      <h2 className="font-serif text-3xl md:text-4xl font-bold text-navy dark:text-white mt-3 mb-4">
+        A Trusted Partner in Academic Excellence
+      </h2>
 
-                  {/* Content */}
-                  <div className={`w-full md:w-1/2 ml-12 md:ml-0 ${idx % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:ml-auto'}`}>
-                    <Card>
-                      <span className="text-gold font-sans font-bold">{item.year}</span>
-                      <p className="text-sm text-ink dark:text-ink-200">{item.event}</p>
-                    </Card>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Container>
-      </Section>
+      <div className="gold-divider mb-5" />
 
-      {/* CTA */}
-      <Section>
-        <Container size="sm">
-          <Card className="text-center p-8">
-            <h3 className="font-serif text-xl font-bold text-navy dark:text-white mb-3">
-              Join the MOF Network
-            </h3>
-            <p className="text-ink dark:text-ink-200 mb-6">
-              Register your school to participate in our Olympiads and give your
-              students the opportunity to excel.
-            </p>
-            <Button asChild>
-              <Link to="/register">
-                Register Your School <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
-          </Card>
-        </Container>
-      </Section>
-    </>
-  );
-}
+      <p className="max-w-3xl mx-auto text-lg text-ink dark:text-ink-200">
+        Maharashtra Olympiad Foundation provides a transparent, student-centric,
+        and academically rigorous Olympiad experience that helps students grow
+        beyond traditional classroom learning.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <Card className="p-6">
+        <Medal className="w-10 h-10 text-gold mb-4" />
+        <h3 className="font-semibold text-xl text-navy dark:text-white mb-3">
+          Expert-Designed Olympiads
+        </h3>
+        <p className="text-ink dark:text-ink-200">
+          Question papers are designed to evaluate conceptual understanding,
+          logical reasoning, and analytical thinking.
+        </p>
+      </Card>
+
+      <Card className="p-6">
+        <ClipboardCheck className="w-10 h-10 text-gold mb-4" />
+        <h3 className="font-semibold text-xl text-navy dark:text-white mb-3">
+          Transparent Evaluation
+        </h3>
+        <p className="text-ink dark:text-ink-200">
+          Standardized assessment ensures fairness, accuracy, and credibility
+          throughout the evaluation process.
+        </p>
+      </Card>
+
+      <Card className="p-6">
+        <BarChart3 className="w-10 h-10 text-gold mb-4" />
+        <h3 className="font-semibold text-xl text-navy dark:text-white mb-3">
+          Performance Insights
+        </h3>
+        <p className="text-ink dark:text-ink-200">
+          Students and schools receive meaningful performance analysis to
+          identify strengths and improvement areas.
+        </p>
+      </Card>
+
+      <Card className="p-6">
+        <ShieldCheck className="w-10 h-10 text-gold mb-4" />
+        <h3 className="font-semibold text-xl text-navy dark:text-white mb-3">
+          Secure Certification
+        </h3>
+        <p className="text-ink dark:text-ink-200">
+          Certificates are issued with QR verification, ensuring authenticity
+          and preventing misuse.
+        </p>
+      </Card>
+
+      <Card className="p-6">
+        <Award className="w-10 h-10 text-gold mb-4" />
+        <h3 className="font-semibold text-xl text-navy dark:text-white mb-3">
+          Recognition of Excellence
+        </h3>
+        <p className="text-ink dark:text-ink-200">
+          Outstanding students are recognized through certificates, awards,
+          and statewide acknowledgment.
+        </p>
+      </Card>
+
+      <Card className="p-6">
+        <Users className="w-10 h-10 text-gold mb-4" />
+        <h3 className="font-semibold text-xl text-navy dark:text-white mb-3">
+          School Partnership
+        </h3>
+        <p className="text-ink dark:text-ink-200">
+          We work closely with schools and educators to promote academic
+          excellence through collaborative initiatives.
+        </p>
+      </Card>
+
+    </div>
+
+  </Container>
+</Section>
+
+      
+
+      
+      {/* Call to Action */}
+<Section>
+  <Container size="md">
+
+    <Card className="text-center p-10 md:p-14 bg-gradient-to-r from-navy to-navy-800 text-white">
+
+      <span className="inline-block px-4 py-1 rounded-full bg-gold text-navy font-semibold text-sm mb-5">
+        Join the MOF Community
+      </span>
+
+      <h2 className="font-serif text-3xl md:text-4xl font-bold mb-5">
+        Inspire the Next Generation of Achievers
+      </h2>
+
+      <p className="text-lg text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed">
+        Partner with Maharashtra Olympiad Foundation and provide your students
+        with an opportunity to compete, learn, and excel through
+        concept-based Olympiad examinations recognized across Maharashtra.
+      </p>
+
+      <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+        <Button asChild size="lg">
+          <Link to="/register">
+            Register Your School
+            <ArrowRight className="w-5 h-5 ml-2" />
+          </Link>
+        </Button>
+
+        <Button
+          asChild
+          size="lg"
+          variant="outline"
+          className="border-white text-white hover:bg-white hover:text-navy"
+        >
+          <Link to="/contact">
+            Contact Us
+          </Link>
+        </Button>
+
+      </div>
+
+    </Card>
+
+  </Container>
+</Section>
