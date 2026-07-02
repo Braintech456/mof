@@ -81,11 +81,11 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo & Name */}
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-navy dark:bg-gold flex items-center justify-center">
-                <span className="text-gold dark:text-navy font-serif font-bold text-lg md:text-xl">
-                  MOF
-                </span>
-              </div>
+              <img
+  src="https://i.ibb.co/R4372zFx/Chat-GPT-Image-Jun-27-2026-07-47-04-PM-1.png"
+  alt="Maharashtra Olympiad Foundation"
+  className="h-14 md:h-16 w-auto object-contain"
+/>
               <div className="hidden sm:block">
                 <h1 className="font-serif font-bold text-navy dark:text-white text-sm md:text-base leading-tight">
                   {siteConfig.name}
