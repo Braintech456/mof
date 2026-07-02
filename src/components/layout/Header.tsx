@@ -84,7 +84,7 @@ export default function Header() {
               <img
   src="https://i.ibb.co/R4372zFx/Chat-GPT-Image-Jun-27-2026-07-47-04-PM-1.png"
   alt="Maharashtra Olympiad Foundation"
-  className="h-14 md:h-16 w-auto object-contain"
+  className="h-16 md:h-18 w-auto object-contain"
 />
               <div className="hidden sm:block">
                 <h1 className="font-serif font-bold text-navy dark:text-white text-sm md:text-base leading-tight">
