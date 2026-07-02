@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Shield, CheckCircle, XCircle, QrCode, AlertCircle } from 'lucide-react';
 import { Container, Section, Button, Input, Card, Spinner } from '../components/ui';
-import { supabase } from '../lib/supabase';
 
 interface CertificateData {
   id: string;
